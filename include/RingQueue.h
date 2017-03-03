@@ -37,6 +37,7 @@ int swRingQueue_init(swRingQueue *, int buffer_size);
 int swRingQueue_push(swRingQueue *, void *);
 int swRingQueue_pop(swRingQueue *, void **);
 #else
+// 链表的模式
 typedef struct _swRingQueue
 {
 	int head; /* 头部，出队列方向*/
